@@ -86,7 +86,7 @@ class PaymentIntentModel {
     this.transferGroup,
   });
 
-  factory PaymentIntentModel.from(Map<String, dynamic> json) {
+  factory PaymentIntentModel.fromJson(Map<String, dynamic> json) {
     return PaymentIntentModel(
       id: json['id'] as String?,
       object: json['object'] as String?,
