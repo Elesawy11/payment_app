@@ -21,7 +21,7 @@ class StripeService {
   }
 
   Future initPaymentSheet({required String paymentIntentClientSecret}) async {
-    Stripe.instance.initPaymentSheet(
+    await Stripe.instance.initPaymentSheet(
         paymentSheetParameters: SetupPaymentSheetParameters(
       merchantDisplayName: 'Elesawy',
       paymentIntentClientSecret: paymentIntentClientSecret,
@@ -29,7 +29,7 @@ class StripeService {
   }
 
   Future presntPaymentSheet() async {
-    Stripe.instance.presentPaymentSheet();
+    await Stripe.instance.presentPaymentSheet();
   }
 
   Future makePayment(

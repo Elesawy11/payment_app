@@ -6,7 +6,7 @@ class PaymentIntentInputModel {
 
   Map<String, dynamic> toJon() {
     return {
-      'amount': amount,
+      'amount': amount*100,
       'currency': currency,
     };
   }
