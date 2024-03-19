@@ -41,6 +41,7 @@ dependencies:
   flutter_stripe: ^10.1.1
   flutter_svg: ^2.0.10+1
   font_awesome_flutter: ^10.7.0
+  flutter_paypal_payment: ^1.0.0
 
 dev_dependencies:
   flutter_lints: ^3.0.0
